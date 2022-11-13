@@ -1,0 +1,100 @@
+header {
+    display: flex;
+}
+
+
+header nav {
+    display: flex;
+    margin-left: auto;
+
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    column-gap: 15px;
+    margin-right: 15px;
+}
+
+header nav ul li {
+    letter-spacing: 1px;
+    font-weight: 100
+}
+
+.content {
+    display: grid;
+    grid-template-areas:
+        "img-container text-container"
+        "img-container ";
+    justify-content: center;
+    align-content: center;
+    column-gap: 50px;
+    grid-auto-flow: column;
+    box-sizing: border-box;
+    place-items: center;
+    height: 80vh;
+}
+
+
+.content-img img {
+    width: 250px;
+}
+
+.text-container {
+    grid-row: 1;
+    grid-column: 2;
+
+
+}
+
+.text-container h3 {
+    font-size: 16px;
+    color: grey;
+    font-weight: 100;
+    margin: 0;
+}
+
+.subtext-container {
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.subtext-container h1 {
+    font-size: 42px;
+    color: black;
+    font-weight: 100;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 10px;
+}
+
+.subtext-container h2 {
+    color: grey;
+    font-size: 42px;
+    font-weight: 100;
+    margin: 0;
+    line-height: 1;
+}
+
+.img-container {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.font-poppins {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.action-button {
+    border: none;
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
