@@ -90,6 +90,10 @@ a:clicked {
     background: red
 }
 
+.d-none {
+    display: none;
+}
+
 @media(max-width: 480px) {
     .card {
         width: 320px;
