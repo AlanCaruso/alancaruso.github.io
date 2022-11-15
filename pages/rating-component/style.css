@@ -6,14 +6,14 @@ body {
 
 .card {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgb(23, 30, 40);
     background: linear-gradient(0deg, rgba(23, 30, 40, 1) 0%, rgba(33, 40, 50, 1) 100%);
-    padding: 20px;
+    padding: 30px;
     border-radius: 20px;
-    width: 370px;
+    width: 375px;
 }
 
 
@@ -24,7 +24,9 @@ ul {
 }
 
 ul li {
-    padding: 15px 20px 15px 20px;
+    padding: 26px 20px 22px 21px;
+    line-height: 0;
+
 }
 
 a {
@@ -33,6 +35,7 @@ a {
     background: #262f38;
     border-radius: 50%;
     margin-right: 20px;
+    transition: all 0.3s;
 
 }
 
@@ -49,12 +52,15 @@ p {
 }
 
 button {
+    font-size: 15px;
     padding: 10px;
     border-radius: 10px;
     width: 100%;
     border: none;
-    background: #fc7613;
+    background: #eb7e35;
     color: white;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
 button:hover {
@@ -72,4 +78,14 @@ button:hover {
 .icon img {
     width: 20px;
 
+}
+
+a:clicked {
+    background: red
+}
+
+@media(max-width: 480px) {
+    .card {
+        width: 340px;
+    }
 }
