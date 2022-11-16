@@ -94,10 +94,45 @@ a:clicked {
     display: none;
 }
 
+
+.greetings img {
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.greetings-text {
+    width: 185px;
+    background: #262f38;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    line-height: 2;
+    color: #eb7e35;
+    letter-spacing: 1;
+}
+
+.greetings h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.greetings p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 @media(max-width: 480px) {
     .card {
         width: 320px;
     }
 
+    a:hover {
+        background: #eb7e35;
+        color: white;
+    }
 
 }
