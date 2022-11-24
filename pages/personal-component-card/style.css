@@ -1,0 +1,168 @@
+body {
+    background: rgb(208, 236, 255);
+}
+
+header {
+    display: flex;
+    padding-right: 30px;
+}
+
+
+header nav {
+    display: flex;
+    margin-left: auto;
+
+}
+
+header nav ul {
+    font-size: 13px;
+    list-style-type: none;
+    display: flex;
+    column-gap: 35px;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 70px;
+}
+
+header nav ul li {
+    letter-spacing: 1px;
+    font-weight: 100
+}
+
+.card-container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    width: 750px;
+    background-color: white;
+    padding: 40px 25px 15px 0px;
+    border-radius: 10px;
+    box-shadow: 8px 9px 28px 0px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 8px 9px 28px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 8px 9px 28px 0px rgba(0, 0, 0, 0.16);
+}
+
+.content {
+    display: grid;
+    grid-template-areas:
+        "img-container text-container"
+        "img-container ";
+    justify-content: center;
+    align-content: center;
+    column-gap: 50px;
+    grid-auto-flow: column;
+    box-sizing: border-box;
+    place-items: center;
+    margin: 0;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+
+.content-img img {
+    width: 250px;
+}
+
+.text-container {
+    grid-row: 1;
+    grid-column: 2;
+
+
+}
+
+.text-container h3 {
+    font-size: 16px;
+    color: grey;
+    font-weight: 100;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.subtext-container {
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.subtext-container h1 {
+    font-size: 42px;
+    color: black;
+    font-weight: 100;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.subtext-container h2 {
+    color: grey;
+    font-size: 42px;
+    font-weight: 100;
+    margin: 0;
+    line-height: 1;
+}
+
+.img-container {
+    grid-row: 1;
+    grid-column: 1;
+    padding-right: 35px;
+}
+
+.font-poppins {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.action-button {
+    border: none;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 11px;
+}
+
+.action-button:hover {
+
+    transition: all 0.3s;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    float: right;
+    padding: 20px 10px 0px 0px;
+    margin: 0;
+
+}
+
+.footer img {
+    width: 25px;
+    padding-left: 10px;
+
+}
+
+@media (max-width: 880px) {
+    .card {
+        width: 100%;
+    }
+}
