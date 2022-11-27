@@ -20,7 +20,7 @@ body {
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 80%;
 }
 
 .content {
@@ -111,8 +111,8 @@ a:hover {
 }
 
 .js-tag {
-    color: #ffea3b;
-    border: 1px solid #ffea3b
+    color: #f7df1e;
+    border: 1px solid #f7df1e
 }
 
 @media(max-width: 1100px) {
