@@ -4,6 +4,10 @@ body {
     color: white;
 }
 
+h1 {
+    color: #6a6fbf
+}
+
 .card {
     position: absolute;
     top: 45%;
@@ -41,7 +45,7 @@ a {
 }
 
 .active {
-    background: #ff750e;
+    background: #6a6fbf;
     color: white;
 }
 
@@ -63,8 +67,8 @@ button {
     border-radius: 10px;
     width: 100%;
     border: none;
-    background: #eb7e35;
-    color: white;
+    background: #6a6fbf;
+    color: #141519;
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -100,6 +104,7 @@ a:clicked {
     justify-content: center;
     display: flex;
     margin-bottom: 30px;
+    width: 100px;
 }
 
 .greetings-text {
@@ -110,7 +115,7 @@ a:clicked {
     display: flex;
     border-radius: 20px;
     line-height: 2;
-    color: #eb7e35;
+    color: #6a6fbf;
     letter-spacing: 1;
 }
 
