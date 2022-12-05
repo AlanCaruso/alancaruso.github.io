@@ -15,9 +15,9 @@ body {
 }
 
 .gallery {
-    margin: 0;
+    margin: 0 auto;
     position: absolute;
-    top: 100%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
@@ -27,8 +27,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 60px;
-    margin-top: 50px;
-
+    margin-top: 90px;
     margin-bottom: 50px;
 
 
@@ -123,12 +122,11 @@ a:hover {
     }
 
     .gallery {
-        margin: 0;
         position: relative;
         top: 0;
         left: 0;
         transform: translate(0, 0);
         width: 70%;
-        padding: 155px;
+        padding-top: 155px;
     }
 }
