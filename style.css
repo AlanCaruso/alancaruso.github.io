@@ -68,31 +68,32 @@ h1 {
 
 h2 {
     letter-spacing: 1px;
-    color: grey;
+    color: rgb(79, 78, 78);
     text-align: center;
     padding-bottom: 10px;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 h3 {
     letter-spacing: 1px;
-    color: black;
+    color: rgb(79, 78, 78);
     text-align: center;
     padding-bottom: 0px;
     font-size: 16px;
     width: 50%;
     margin: auto;
-    font-weight: 400;
+    font-weight: 200;
 }
 
-.card h3 {
+h4 {
     text-align: center;
     letter-spacing: 2px;
     font-size: 17px;
     padding: 0 0 20px 0;
     margin: auto;
     box-sizing: border-box;
+    font-weight: 300;
 
 }
 
