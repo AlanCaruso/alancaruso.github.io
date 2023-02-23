@@ -1,6 +1,3 @@
 [submodule "alancaruso.github.io"]
 	path = alancaruso.github.io
 	url = https://github.com/AlanCaruso/alancaruso.github.io.git
-[submodule "pages/search-github-users"]
-	path = pages/search-github-users
-	url = https://github.com/AlanCaruso/search-github-users.git
