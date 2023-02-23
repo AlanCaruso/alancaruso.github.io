@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Github Users</title>
+    <meta property='og:title' content='Github Users Searcher' />
+    <meta property='og:image' content='https://iili.io/HMH0TH7.png' />
+    <meta property='og:description' content='Buscador de perfiles de Github' />
+    <meta property='og:url' content='https://alancaruso.github.io/pages/search-github-users/' />
+    <meta property='og:image:width' content='850' />
+    <meta property='og:image:height' content='850' />
+    <meta property="og:type" content='website' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="favorites">
+
+        </div>
+
+        <article class="content">
+            <div class="min-h-screen bg-gray-100 flex justify-center items-center">
+                <div class="bg-white p-4 w-96 rounded-md">
+                    <h1 class="text-slate-900 text-base font-medium tracking-tight">Github profile searcher</h1>
+                    <form v-on:submit.prevent="doSearch()"
+                        class="mt-5 mb-2 border-2 py-1 px-3 flex justify-between rounde-md rounded-md">
+                        <input class="flex-grow outline-none text-gray-600 focus:text-blue-600" type="text"
+                            placeholder="Search profile..." v-model="search" />
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 text-gray-400 hover:text-blue-400 transition duration-100 cursor-pointer"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </form>
+                    <div class="result" v-if="result">
+                        <h2 class="result-name">{{result.name}}</h2>
+                        <img v-bind:src="result.avatar_url" :alt="result.name" class="result-avatar">
+                        <p class="result-bio text-slate-500 dark:text-slate-400 text-sm">
+                            {{result.bio}}
+                        <p></p>
+                        <a v-bind:href="result.blog" class="result-blog">{{result.blog}}</a>
+                        </p>
+
+                    </div>
+                    <div class="waiting-text text-sm" v-else>
+                        <p class="saving">
+                            Waiting for search<span>.</span><span>.</span><span>.</span>
+                        </p>
+                    </div>
+                    <div v-if="error" class="result-error">{{error}}</div>
+                </div>
+            </div>
+
+
+
+        </article>
+
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        const mountedApp = app.mount("#app")
+    </script>
+</body>
+
+</html>
