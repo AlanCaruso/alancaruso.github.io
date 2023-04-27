@@ -1,7 +1,7 @@
 const items = {
   0: {
     title: "Sidebar Library Component",
-    url: "pages/sidebar-library-component",
+    url: "pages/component-sidebar-library",
     img: "img/sidebar-library-component.png",
   },
   1: {
