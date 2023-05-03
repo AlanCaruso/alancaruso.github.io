@@ -15,13 +15,17 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
     <div class="nav">
       <div class="header">
         <img src="img/logo.png" alt="" />
+      </div>
+      <div class="language-menu">
+        <a href="#eng">English</a>
+        <a href="#es">Español</a>
       </div>
       <ul class="social-menu">
         <a target="_blank" href="https://www.linkedin.com/in/alancaruso/">
@@ -43,7 +47,7 @@
     </div>
     <div class="gallery">
       <div class="profile">
-        <h1>Hi, I'am Alan</h1>
+        <h1 id="title">Hi, I'am Alan</h1>
         <h2>Web Developer Portfolio</h2>
         <h3>
           Hey 👋🏻
@@ -54,13 +58,11 @@
           >, who is passionate about design and loves to <br />
           create solutions for complex problems through user-centric design.
         </h3>
-
-        <!-- <h3>Alto nivel de experiencia en diseño web y conocimiento en programacion, produciendo trabajo de calidad.
-            </h3> -->
       </div>
 
       <div class="content"></div>
       <script type="module" src="main.js"></script>
+      <script type="module" src="./assets/js/language.js"></script>
     </div>
   </body>
 </html>
