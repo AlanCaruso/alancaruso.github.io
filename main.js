@@ -1,19 +1,43 @@
-import items from "./assets/js/portfolio.js";
 import introLanguages from "./assets/data/languagesData.js";
+import language from "./assets/js/language.js";
+import items from "./assets/data/portfolioData.js";
 
-function createGallery() {
+const createGallery = function () {
   const content = document.querySelector(".content");
+
   content.innerHTML = Object.keys(items)
     .map((key) => {
       return `<a target="_blank" href="${items[key].url}">
             <div class="card">
+                <div class="tag" data-tag="${items[key].tags}">
+                  <span class="tag-text">${items[key].tags}</span>
+                </div>
                 <h4>${items[key].title}</h4>
                 <img src="${items[key].img}" alt="">
             </div>
         </a>`;
     })
     .join("");
-}
+
+  setTimeout(addTags, 1000);
+};
+
+const addTags = function () {
+  const posts = document.querySelectorAll(".tag");
+
+  posts.forEach((post) => {
+    const tagElement = post.querySelector(".tag-text");
+    console.log(tagElement);
+    const postTag = post.getAttribute("data-tag");
+    console.log(postTag);
+    Object.keys(items).forEach((key) => {
+      const tag = items[key].tags;
+      if (postTag === tag) {
+        tagElement.classList.add(`${tag}-tag`);
+      }
+    });
+  });
+};
 
 document.addEventListener("DOMContentLoaded", function (event) {
   if (window.location.hash) {
@@ -24,19 +48,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 
-  const languageButton = document.querySelectorAll(".language-menu a");
-
-  for (let i = 0; i <= languageButton.length; i++) {
-    if (languageButton[i]) {
-      languageButton[i].onclick = function click() {
-        setTimeout(function () {
-          location.reload(true);
-        }, 200);
-      };
-    } else {
-      console.log("language option does not exist");
-    }
-  }
+  language();
 });
 
 createGallery();

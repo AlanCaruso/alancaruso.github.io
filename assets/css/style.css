@@ -27,7 +27,7 @@ body {
 .gallery {
   margin: 0 auto;
   margin-top: 100px;
-  width: 90%;
+  width: 95%;
   text-align: center;
 }
 
@@ -41,10 +41,11 @@ body {
 .card {
   padding: 0px;
   border-radius: 10px;
+  width: 90%;
 }
 
 .card img {
-  max-width: 85%;
+  max-width: 100%;
   border-radius: 10px;
   margin: auto;
   display: flex;
@@ -120,12 +121,12 @@ a:hover {
   border: 1px solid #ffaa3b;
 }
 
-.css-tag {
+.web-tag {
   color: #3b93ff;
   border: 1px solid #3b93ff;
 }
 
-.figma-tag {
+.ui-tag {
   color: #e63bff;
   border: 1px solid #e63bff;
 }
@@ -176,7 +177,7 @@ a:hover {
     top: 0;
     left: 0;
     transform: translate(0, 0);
-    width: 70%;
+    width: 90%;
     padding-top: 155px;
   }
 
