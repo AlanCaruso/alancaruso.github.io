@@ -1,14 +1,14 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background-color: #f1f5fd;
 }
 
 .nav {
   height: 70px;
   display: flex;
   justify-content: space-between;
-  position: fixed;
   width: 100%;
-  background-color: white;
   z-index: 2;
   top: 0;
   align-items: center;
@@ -20,8 +20,9 @@ body {
 }
 
 .header img {
-  width: 200px;
-  padding: 0;
+  width: 130px;
+  padding: 0 0 0 15px;
+  margin: 0;
 }
 
 .gallery {
@@ -57,27 +58,29 @@ h1 {
   text-align: center;
   padding-bottom: 0px;
   font-size: 40px;
-  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2a2a2a;
 }
 
 h2 {
   letter-spacing: 1px;
-  color: rgb(79, 78, 78);
+  color: #2a2a2a;
   text-align: center;
   padding-bottom: 10px;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 h3 {
   letter-spacing: 1px;
-  color: rgb(79, 78, 78);
+  color: #626592;
   text-align: center;
   padding-bottom: 0px;
   font-size: 16px;
   width: 75%;
   margin: auto;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 h4 {
@@ -87,7 +90,8 @@ h4 {
   padding: 0 0 20px 0;
   margin: auto;
   box-sizing: border-box;
-  font-weight: 300;
+  font-weight: 600;
+  color: #2a2a2a;
 }
 
 a {
@@ -106,6 +110,8 @@ a:hover {
   justify-content: end;
   flex-direction: row-reverse;
   margin-bottom: 20px;
+  font-weight: 600;
+  color: #2a2a2a;
 }
 
 .tag span {
@@ -114,26 +120,24 @@ a:hover {
   margin-left: 10px;
   font-size: 11px;
   letter-spacing: 1px;
+  color: #626592;
+  font-weight: 600;
 }
 
 .html-tag {
-  color: #ffaa3b;
   border: 1px solid #ffaa3b;
 }
 
 .web-tag {
-  color: #3b93ff;
-  border: 1px solid #3b93ff;
+  border: 2px solid #75b2fc;
 }
 
 .ui-tag {
-  color: #e63bff;
-  border: 1px solid #e63bff;
+  border: 2px solid #e63bff;
 }
 
 .js-tag {
-  color: #f7df1e;
-  border: 1px solid #f7df1e;
+  border: 2px solid #fff290;
 }
 
 .social-menu {

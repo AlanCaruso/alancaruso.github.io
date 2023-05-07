@@ -10,7 +10,7 @@ const createGallery = function () {
       return `<a target="_blank" href="${items[key].url}">
             <div class="card">
                 <div class="tag" data-tag="${items[key].tags}">
-                  <span class="tag-text">${items[key].tags}</span>
+                  <span class="tag-text">${items[key].tagsTitle}</span>
                 </div>
                 <h4>${items[key].title}</h4>
                 <img src="${items[key].img}" alt="">
@@ -27,9 +27,7 @@ const addTags = function () {
 
   posts.forEach((post) => {
     const tagElement = post.querySelector(".tag-text");
-    console.log(tagElement);
     const postTag = post.getAttribute("data-tag");
-    console.log(postTag);
     Object.keys(items).forEach((key) => {
       const tag = items[key].tags;
       if (postTag === tag) {
