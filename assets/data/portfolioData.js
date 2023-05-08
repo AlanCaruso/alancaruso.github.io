@@ -1,26 +1,33 @@
 const items = {
   0: {
+    title: "Drone Service App",
+    url: "https://www.figma.com/file/iVyeFT2gX4XDJiypUTuIud/Drone-App?type=design&node-id=0%3A1&t=K0fH7oITz0JWr81t-1",
+    img: "img/drone-app.png",
+    tagsTitle: "UI Design",
+    tags: "ui",
+  },
+  1: {
     title: "Sidebar Library Component",
     url: "pages/component-sidebar-library",
     img: "img/sidebar-library-component.png",
     tagsTitle: "Web Development",
     tags: "js",
   },
-  1: {
+  2: {
     title: "QR Code Generator",
     url: "pages/qr-code-generator",
     img: "img/qr-code-generator.png",
     tagsTitle: "Web Development",
     tags: "js",
   },
-  2: {
+  3: {
     title: "Github Users Searcher",
     url: "pages/search-github-users",
     img: "img/search-github-users.png",
     tagsTitle: "Web Development",
     tags: "js",
   },
-  3: {
+  4: {
     title: "To Do App",
     url: "pages/todo-app",
     img: "img/todo-app.png",
@@ -28,17 +35,10 @@ const items = {
     tags: "js",
   },
 
-  4: {
+  5: {
     title: "Experience Rating",
     url: "pages/rating-component",
     img: "img/rating-component.png",
-    tagsTitle: "Web Development",
-    tags: "js",
-  },
-  5: {
-    title: "Adventurer Ecommerce",
-    url: "pages/adventurer-ecommerce",
-    img: "img/adventurer-ecommerce.png",
     tagsTitle: "Web Development",
     tags: "js",
   },
