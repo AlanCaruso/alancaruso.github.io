@@ -30,7 +30,6 @@ body {
 .portfolio-card {
   padding: 0px;
   border-radius: 10px;
-  width: 90%;
 }
 
 .portfolio-card img {
@@ -117,10 +116,10 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
+  column-gap: 45px;
 }
-.social-menu a {
-  padding-left: 20px;
-}
+
 .social-menu img {
   width: 20px;
 }
