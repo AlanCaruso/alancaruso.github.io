@@ -162,8 +162,11 @@ section {
 
 .nav-link {
   font-size: 15px;
-  color: black;
   font-weight: 600;
+}
+
+.nav-normal {
+  color: black !important;
 }
 .nav-normal:hover {
   color: rgb(86, 86, 86);
