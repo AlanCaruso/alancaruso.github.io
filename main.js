@@ -8,7 +8,7 @@ const createGallery = function () {
   content.innerHTML = Object.keys(items)
     .map((key) => {
       return `<a target="_blank" href="${items[key].url}">
-            <div class="card">
+            <div class="portfolio-card">
                 <div class="tag" data-tag="${items[key].tags}">
                   <span class="tag-text">${items[key].tagsTitle}</span>
                 </div>

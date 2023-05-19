@@ -3,28 +3,16 @@ body {
   font-weight: 400;
   background-color: #f1f5fd;
 }
-
-.nav {
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
+.navbar {
+  position: fixed;
   width: 100%;
-  z-index: 2;
+  background-color: white;
   top: 0;
-  align-items: center;
+  z-index: 2;
 }
-
-.header {
-  width: 200px;
-  display: flex;
+.nav-item {
+  padding-left: 30px;
 }
-
-.header img {
-  width: 130px;
-  padding: 0 0 0 15px;
-  margin: 0;
-}
-
 .gallery {
   margin: 0 auto;
   margin-top: 100px;
@@ -39,13 +27,13 @@ body {
   margin-bottom: 50px;
 }
 
-.card {
+.portfolio-card {
   padding: 0px;
   border-radius: 10px;
   width: 90%;
 }
 
-.card img {
+.portfolio-card img {
   max-width: 100%;
   border-radius: 10px;
   margin: auto;
@@ -124,34 +112,15 @@ a:hover {
   font-weight: 600;
 }
 
-.html-tag {
-  border: 1px solid #ffaa3b;
-}
-
-.web-tag {
-  border: 2px solid #75b2fc;
-}
-
-.ui-tag {
-  border: 2px solid #e63bff;
-}
-
-.js-tag {
-  border: 2px solid #fff290;
-}
-
 .social-menu {
   list-style-type: none;
   display: flex;
   align-items: center;
-  margin-right: 30px;
+  justify-content: center;
 }
-
-.social-menu li {
+.social-menu a {
   padding-left: 20px;
-  line-height: 1;
 }
-
 .social-menu img {
   width: 20px;
 }
@@ -170,7 +139,79 @@ a:hover {
   text-decoration: none;
   color: black;
 }
+/* Estilos personalizados */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f1f5fd;
+}
 
+section {
+  border-radius: 10px;
+}
+.navbar-nav {
+  align-items: center;
+}
+.navbar-brand {
+  font-size: 24px;
+}
+.navbar-brand img {
+  width: 130px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  font-size: 15px;
+  color: black;
+  font-weight: 600;
+}
+.nav-normal:hover {
+  color: rgb(86, 86, 86);
+  transition: 0.5s;
+  transform: scale(1.01);
+}
+.nav-button:hover {
+  color: white;
+  box-shadow: 0px 0px 10px #00000026;
+  transition: 0.5s;
+  transform: scale(1.01);
+}
+.btn {
+  border-radius: 30px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.profile-avatar {
+  width: 100px;
+  padding-bottom: 20px;
+}
+.portfolio-card-text {
+  color: #858592;
+}
+.btn-contact {
+  background: linear-gradient(
+    90deg,
+    rgba(18, 124, 255, 1) 0%,
+    rgba(141, 23, 255, 1) 100%
+  );
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+.btn-form {
+  background: linear-gradient(
+    90deg,
+    rgba(18, 124, 255, 1) 0%,
+    rgba(141, 23, 255, 1) 100%
+  );
+  border: none;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 @media (max-width: 1100px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
