@@ -7,8 +7,8 @@ const items = {
     tags: "js",
   },
   1: {
-    title: "Crud App",
-    url: "https://www.figma.com/file/iVyeFT2gX4XDJiypUTuIud/Drone-App?type=design&node-id=0%3A1&t=K0fH7oITz0JWr81t-1",
+    title: "Task Manager",
+    url: "http://sitestudio.online/me/pages/task-manager",
     img: "http://sitestudio.online/me/img/crud-app.png",
     tagsTitle: "Web Dev",
     tags: "js",
@@ -21,7 +21,7 @@ const items = {
     tags: "ui",
   },
   3: {
-    title: "Sidebar Library Component",
+    title: "UI Library Components",
     url: "http://sitestudio.online/me/pages/component-sidebar-library",
     img: "http://sitestudio.online/me/img/sidebar-library-component.png",
     tagsTitle: "Web Development",
