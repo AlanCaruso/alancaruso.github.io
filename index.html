@@ -169,14 +169,36 @@
         <h1 class="text-center mt-5 fs-3 mb-3">Contact Me</h1>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form>
+            <form id="form">
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" required />
+                <input
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  required
+                />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" required />
+                <input
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="name" class="form-label">Message</label>
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  type="text"
+                  class="form-control"
+                  required
+                ></textarea>
               </div>
               <button
                 type="submit"
@@ -226,6 +248,8 @@
         section.scrollIntoView({ behavior: "smooth" });
       }
     </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="module" src="./assets/js/contact.js"></script>
     <script type="module" src="main.js"></script>
     <script type="module" src="./assets/js/language.js"></script>
   </body>
