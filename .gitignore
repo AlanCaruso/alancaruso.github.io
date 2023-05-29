@@ -1,0 +1,4 @@
+export SENDGRID_API_KEY='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' echo sendgrid.env source ./sendgrid.env
+export SENDGRID_API_KEY='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' echo sendgrid.env source ./sendgrid.env
+sendgrid.env
+sendgrid.env

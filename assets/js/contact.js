@@ -3,32 +3,21 @@ const form = document.getElementById("form");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  const formData = new FormData(form);
-  const name = formData.get("name");
-  const email = formData.get("email");
-  const message = formData.get("message");
-
-  const TOKEN_API = "token";
-  const toEmail = "email";
-
-  const mailDetails = {
-    SecureToken: TOKEN_API,
-    To: toEmail,
-    From: document.getElementById("email").value,
-    Subject: "Nuevo formulario enviado",
-    Body: `
-      Nombre: ${name}
-      Email: ${email}
-      Mensaje: ${message}
-    `,
+  const sgMail = require("@sendgrid/mail");
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+  const msg = {
+    to: "test@example.com", // Change to your recipient
+    from: "test@example.com", // Change to your verified sender
+    subject: "Sending with SendGrid is Fun",
+    text: "and easy to do anywhere, even with Node.js",
+    html: "<strong>and easy to do anywhere, even with Node.js</strong>",
   };
-
-  Email.send(mailDetails)
-    .then(function (response) {
-      console.log("Correo electrónico enviado con éxito", response);
-      form.reset();
+  sgMail
+    .send(msg)
+    .then(() => {
+      console.log("Email sent");
     })
-    .catch(function (error) {
-      console.error("Error al enviar el correo electrónico:", error);
+    .catch((error) => {
+      console.error(error);
     });
 });
